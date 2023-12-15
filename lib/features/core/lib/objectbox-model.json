@@ -1,0 +1,100 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7509623685106449785",
+      "lastPropertyId": "5:6963172928414140199",
+      "name": "LocalImageUrlData",
+      "properties": [
+        {
+          "id": "1:3700246813216965132",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:447907058851274834",
+          "name": "origin",
+          "type": 9
+        },
+        {
+          "id": "3:5213356338703435757",
+          "name": "sm",
+          "type": 9
+        },
+        {
+          "id": "4:6881816886079980783",
+          "name": "md",
+          "type": 9
+        },
+        {
+          "id": "5:6963172928414140199",
+          "name": "lg",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:4281904655046585748",
+      "lastPropertyId": "6:3969346648642794996",
+      "name": "LocalUserData",
+      "properties": [
+        {
+          "id": "1:2612968231825094278",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7303430139510123141",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "3:5006476526141649226",
+          "name": "money",
+          "type": 9
+        },
+        {
+          "id": "4:7319767481076087986",
+          "name": "gender",
+          "type": 6
+        },
+        {
+          "id": "5:4236362996808758198",
+          "name": "birthday",
+          "type": 6
+        },
+        {
+          "id": "6:3969346648642794996",
+          "name": "avatarId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:813605657924714391",
+          "relationTarget": "LocalImageUrlData"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:9063116466050316911",
+          "name": "photos",
+          "targetId": "1:7509623685106449785"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "2:4281904655046585748",
+  "lastIndexId": "1:813605657924714391",
+  "lastRelationId": "1:9063116466050316911",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
